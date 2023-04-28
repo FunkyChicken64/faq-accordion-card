@@ -33,7 +33,7 @@
   --ff-sans: "Kumbh Sans";
 }
 
-@media (min-width: 32em) {
+@media (min-width: 30em) {
   :root {
     --fs-800: 5rem;
     --fs-700: 2.5rem;
