@@ -1,0 +1,477 @@
+:root {
+  /* ### colors */
+  /* primary */
+
+  --clr-very-dark-desaturated-blue: 238 29% 16%;
+  --clr-soft-red: 14 88% 65%;
+
+  /* #### Gradient */
+
+  --clr-soft-violet: 273 75% 66%;
+  --clr-soft-blue: 240 73% 65%;
+
+  /* ### Neutral */
+
+  --clr-very-dark-grayish-blue: 237 12% 33%;
+  --clr-dark-grayish-blue: 240 6% 50%;
+
+  /* #### Dividers */
+
+  --clr-light-grayish-blue: 240 5% 91%;
+
+  /* font-size */
+  --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
+  --fs-800: 3.5rem;
+  --fs-700: 2rem;
+  --fs-600: 1.25rem;
+  --fs-500: 1rem;
+  --fs-400: 0.8rem;
+  --fs-300: 0.75rem;
+  --fs-200: 0.625rem;
+
+  /* font-families */
+  --ff-sans: "Kumbh Sans";
+}
+
+@media (min-width: 32em) {
+  :root {
+    --fs-800: 5rem;
+    --fs-700: 2.5rem;
+    --fs-600: 1.5rem;
+    --fs-500: 1.25rem;
+    --fs-400: 1rem;
+  }
+}
+
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+body {
+  font-family: var(--ff-sans);
+  font-size: var(--fs-400);
+  background-color: hsl(var(--clr-cream));
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* overflow-x: hidden; */
+  padding: 3rem;
+
+  padding-top: 12rem;
+}
+
+/* make images easier to work with */
+/* img,
+picture {
+  display: block;
+} */
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ------------------- */
+/* Utility classes     */
+/* ------------------- */
+
+/* general */
+
+.bg-violet {
+  background-color: hsl(var(--clr-soft-violet));
+}
+
+.bg-blue {
+  background-color: hsl(var(--clr-soft-blue));
+}
+
+.bg-light-grey-blue {
+  background-color: hsl(var(--clr-light-grayish-blue));
+}
+
+.text-blue {
+  color: hsl(var(--clr-very-dark-desaturated-blue));
+}
+
+.text-red {
+  color: hsl(var(--clr-soft-red));
+}
+
+.text-grey-blue {
+  color: hsl(var(--clr-dark-grayish-blue));
+}
+
+.text-dark-grey-blue {
+  color: hsl(var(--clr-very-dark-grayish-blue));
+}
+
+.ff-sans {
+  font-family: var(--ff-sans);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.fs-900 {
+  font-size: var(--fs-900);
+}
+.fs-800 {
+  font-size: var(--fs-800);
+}
+.fs-700 {
+  font-size: var(--fs-700);
+}
+.fs-600 {
+  font-size: var(--fs-600);
+}
+.fs-500 {
+  font-size: var(--fs-500);
+}
+.fs-400 {
+  font-size: var(--fs-400);
+}
+.fs-300 {
+  font-size: var(--fs-300);
+}
+.fs-200 {
+  font-size: var(--fs-200);
+}
+
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600 {
+  line-height: 1.1;
+}
+
+.letter-spacing-1 {
+  letter-spacing: 4.75px;
+}
+.letter-spacing-2 {
+  letter-spacing: 2.7px;
+}
+
+.flex {
+  display: flex;
+}
+
+/* ------------------- */
+/* Compontents         */
+/* ------------------- */
+
+/* ----------------------------- */
+/* Layout                        */
+/* ----------------------------- */
+body {
+  background-image: linear-gradient(
+    hsl(var(--clr-soft-violet)),
+    hsl(var(--clr-soft-blue))
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3rem;
+  width: 100%;
+  padding-inline: clamp(0.1rem, 4vw, 3rem);
+  column-gap: 1rem;
+  justify-content: center;
+}
+
+.faq h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.faq details {
+  padding: 0.6rem;
+}
+
+details > summary {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq > details > summary:hover {
+  color: hsl(var(--clr-soft-red));
+  cursor: pointer;
+}
+
+summary > img {
+  margin-left: 0.2rem;
+  margin-right: 1rem;
+}
+
+.active > summary > img {
+  transform: rotate(180deg);
+}
+
+.active > summary {
+  font-weight: 700;
+  color: hsl(var(--clr-very-dark-desaturated-blue));
+}
+
+hr {
+  height: 1px;
+  width: 96%;
+  color: hsl(var(--clr-light-grayish-blue) / 0.25);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 70rem;
+  width: 100%;
+  background-color: white;
+  box-shadow: 2px 2px 10px rebeccapurple;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+
+.pic-container {
+  display: flex;
+  justify-content: center;
+  float: none;
+  height: 150px;
+  /* border: 1px solid red; */
+  position: relative;
+}
+
+picture > img {
+  height: 270px;
+  width: 350px;
+  position: relative;
+  top: -170px;
+  z-index: 1;
+}
+
+picture {
+  position: relative;
+}
+
+#box {
+  right: 228px;
+  position: absolute;
+  height: 130px;
+  width: 140px;
+  bottom: 88px;
+  z-index: 2;
+}
+
+.desktop {
+  display: none;
+}
+
+.container {
+  background-image: url("./images/bg-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 350px;
+  background-position: 50% 0%;
+}
+
+/* ----------------------------- */
+/* Page specific background      */
+/* ----------------------------- */
+
+/* Desktop */
+
+@media (min-width: 50em) {
+  body {
+    padding-top: 8rem;
+  }
+
+  img,
+  picture {
+    display: block;
+  }
+
+  .container {
+    background-image: none;
+  }
+  #overflow {
+    position: absolute;
+    width: 100px;
+  }
+
+  .desktop {
+    display: block;
+    position: relative;
+    background-repeat: no-repeat;
+    left: -610px;
+    bottom: 160px;
+  }
+
+  picture {
+    position: unset;
+    width: 100px;
+  }
+
+  .picture {
+    position: absolute;
+  }
+
+  .faq {
+    width: clamp(10rem, 60vw, 50rem);
+    padding: 0;
+    right: 150px;
+    /* border: 1px solid blue; */
+    margin-left: 2rem;
+    margin-right: 0;
+  }
+
+  .faq h1 {
+    text-align: left;
+    margin-bottom: 1.5rem;
+    margin-left: 0.5rem;
+  }
+
+  .container {
+    padding: 3rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 35rem;
+    max-width: 70rem;
+  }
+
+  .container {
+    /*  */
+    grid-column-gap: 0rem;
+    grid-row-gap: 0rem;
+  }
+
+  .pic-container {
+    float: none;
+    justify-content: unset;
+    width: 60%;
+    height: 100%;
+    /* border: 1px solid red; */
+    position: unset;
+    top: 0;
+  }
+
+  picture > img {
+    height: 270px;
+    width: 350px;
+    position: relative;
+    right: 90px;
+    top: 70px;
+  }
+
+  #box {
+    position: relative;
+    height: 130px;
+    width: 140px;
+    left: -115px;
+    z-index: 2;
+    top: 170px;
+  }
+}
+
+@media (min-width: 57em) {
+  .faq {
+    margin-left: 5rem;
+    margin-right: 2rem;
+  }
+
+  picture > img {
+    height: 338px;
+    width: 440px;
+    position: relative;
+    right: 105px;
+    top: 30px;
+  }
+
+  #box {
+    position: relative;
+    height: 160px;
+    width: 170px;
+    left: -130px;
+    z-index: 2;
+    top: 160px;
+  }
+}
+
+@media (min-width: 65em) {
+  .faq {
+    margin-left: clamp(5rem, 15vw, 10rem);
+    margin-right: clamp(2rem, 5vw, 3rem);
+  }
+
+  picture > img {
+    height: 400px;
+    width: 520px;
+    position: relative;
+    right: 120px;
+    top: 0;
+  }
+  #box {
+    position: absolute;
+    height: 200px;
+    width: 210px;
+
+    z-index: 2;
+    left: -150px;
+    top: 150px;
+    margin-right: 100px;
+  }
+}
+
+@media (min-width: 76em) {
+  .container {
+    background-image: url("./images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 65rem;
+    background-position: -730% 72%;
+  }
+}
