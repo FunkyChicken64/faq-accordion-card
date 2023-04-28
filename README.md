@@ -26,8 +26,8 @@ Users should be able to:
 ### Screenshots of my final project
 
 <span>
-<img src="./assets/images/desktop-complete.png" height=400>
-<img src="./assets/images/mobile-complete.png" height=400>
+<img src="./design/desktop-complete.png" height=400>
+<img src="./design/mobile-complete.png" height=400>
 </span>
 
 ### Link
