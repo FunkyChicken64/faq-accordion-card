@@ -47,7 +47,7 @@ Started with mobile design first. Created the utility classes (fonts, colors, si
 
 ### What I learned
 
-CSS position is difficult, using the position property takes practise and a good foundation, which i tried to brute force. Eventhough improvements in javascript dom understanding was made.
+CSS position is difficult, using the position property takes practise and a good foundation, which i tried to bruteforce. Nonetheless improvements in javascript dom understanding was done.
 
 ```html
 <details>
