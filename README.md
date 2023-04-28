@@ -47,7 +47,7 @@ Started with mobile design first. Created the utility classes (fonts, colors, si
 
 ### What I learned
 
-CSS position is difficult, using the position property takes practise and a good foundation which i tried to brute force. Improvements in javascript dom understanding.
+CSS position is difficult, using the position property takes practise and a good foundation, which i tried to brute force. Eventhough improvements in javascript dom understanding was made.
 
 ```html
 <details>
@@ -81,7 +81,7 @@ if (this.open) {
 
 ### Continued development
 
-did not use and understand the position property properly, but finally got something working at the end.
+I did not use and understand the position property properly, but finally got something working at the end. I have a problem with the background which would require restructuring of the entire css.
 
 ### Useful resources
 
