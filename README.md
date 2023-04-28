@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Link
 
-- Live Site URL: [project hosted on Netlify](https://earnest-caramel-359f0e.netlify.app)
+- Live Site URL: [project hosted on Netlify](https://joyful-manatee-b8ed26.netlify.app)
 
 ## My process
 
