@@ -1,6 +1,6 @@
-# Frontend Mentor - FAQ accordion card solution
+# Frontend Mentor - FAQ Accordion Card Solution
 
-This is a solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam). 
 
 ## Table of contents
 
@@ -10,7 +10,7 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
   - [Link](#link)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
+  - [What I learnt](#what-i-learnt)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 
@@ -20,15 +20,17 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
 
 Users should be able to:
 
+- Users should be able to interact with the card to reveal or hide the answers to frequently asked questions. 
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
 ### Screenshots of my final project
 
-<span>
-<img src="./design/desktop-complete.png" height=400>
+#### Desktop Layout
+<img src="./design/desktop-complete.png" height=300>
+
+#### Mobile Layout
 <img src="./design/mobile-complete.png" height=400>
-</span>
 
 ### Link
 
@@ -36,7 +38,7 @@ Users should be able to:
 
 ## My process
 
-Started with mobile design first. Created the utility classes (fonts, colors, sizes), followed by the buttons and layout.
+I adopted a mobile-first approach, starting the design process with a focus on mobile devices and progressively enhancing it for larger screens. Created the utility classes (fonts, colors, sizes), followed by the buttons and layout.
 
 ### Built with
 
@@ -45,9 +47,9 @@ Started with mobile design first. Created the utility classes (fonts, colors, si
 - Flexbox
 - Mobile-first workflow
 
-### What I learned
+### What I learnt
 
-CSS position is difficult, using the position property takes practise and a good foundation, which i tried to bruteforce. Nonetheless improvements in javascript dom understanding was done.
+During the development process, I encountered challenges related to CSS positioning. Although I struggled with the position property, I managed to make it work. I also deepened my understanding of JavaScript DOM manipulation, enabling me to control the open/close behavior of the accordion.
 
 ```html
 <details>
@@ -81,9 +83,9 @@ if (this.open) {
 
 ### Continued development
 
-I did not use and understand the position property properly, but finally got something working at the end. I have a problem with the background which would require restructuring of the entire css.
+I acknowledge that I still have room for improvement in properly utilizing the position property. Additionally, I need to address the background issue, which may require restructuring the entire CSS codebase.
 
 ### Useful resources
 
 - [Create a Design System with CSS](https://www.youtube.com/watch?v=lRaL-8qZ0mM) - This helped me for use more complex CSS tools. I really liked this pattern and will use it going forward.
-- [CSS Positioning](https://www.w3schools.com/css/css_positioning.asp) - This is an amazing article which helped me finally understand The position Property. I'd recommend it to anyone still learning this concept.
+- [CSS Positioning](https://www.w3schools.com/css/css_positioning.asp) - This article provided comprehensive information on the position property, finally enabling me to grasp its concepts. I highly recommend it to anyone seeking a solid understanding of this topic.
