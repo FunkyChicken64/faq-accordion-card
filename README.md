@@ -1,7 +1,5 @@
 # Frontend Mentor - FAQ Accordion Card Solution
 
-## Link
-
 Site URL: https://mintmoose.github.io/faq-accordion-card/
 
 ### Screenshots of the final project
