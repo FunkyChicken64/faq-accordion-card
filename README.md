@@ -1,30 +1,10 @@
 # Frontend Mentor - FAQ Accordion Card Solution
 
-This is a solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam). 
+## Link
 
-## Table of contents
+Site URL: https://mintmoose.github.io/faq-accordion-card/
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshots-of-my-final-project)
-  - [Link](#link)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learnt](#what-i-learnt)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-
-## Overview
-
-### The challenge
-
-Users should be able to:
-
-- Users should be able to interact with the card to reveal or hide the answers to frequently asked questions. 
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
-
-### Screenshots of my final project
+### Screenshots of the final project
 
 #### Desktop Layout
 <img src="./design/desktop-complete.png" height=300>
@@ -32,9 +12,15 @@ Users should be able to:
 #### Mobile Layout
 <img src="./design/mobile-complete.png" height=400>
 
-### Link
+## Table of contents
 
-- Live Site URL: https://mintmoose.github.io/faq-accordion-card/
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learnt](#what-i-learnt)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+
+This is a solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam). 
 
 ## My process
 
@@ -66,7 +52,6 @@ During the development process, I encountered challenges related to CSS position
   justify-content: center;
   float: none;
   height: 150px;
-  /* border: 1px solid red; */
   position: relative;
 }
 ```
@@ -83,7 +68,7 @@ if (this.open) {
 
 ### Continued development
 
-I acknowledge that I still have room for improvement in properly utilizing the position property. Additionally, I need to address the background issue, which may require restructuring the entire CSS codebase.
+I acknowledge that I still have room for improvement in properly utilising the position property. Additionally, I need to address the background issue, which may require restructuring the entire CSS codebase.
 
 ### Useful resources
 
