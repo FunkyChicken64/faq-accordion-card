@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Link
 
-- Live Site URL: [project hosted on Netlify](https://joyful-manatee-b8ed26.netlify.app)
+- Live Site URL: https://mintmoose.github.io/faq-accordion-card/
 
 ## My process
 
